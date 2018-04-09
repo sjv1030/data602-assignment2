@@ -35,4 +35,4 @@ COPY requirements.txt ./
 
 RUN git clone https://github.com/sjv1030/data602-assignment2 ../hw2/data602-assignment2
 
-CMD [ "python3", "/hw2/data602-assignment2/final.py" ]
+CMD [ "python", "/hw2/data602-assignment2/final.py" ]
