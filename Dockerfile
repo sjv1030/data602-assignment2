@@ -9,7 +9,7 @@ RUN mkdir /hw2
 
 WORKDIR /hw2
 
-RUN pip3 install json datetime gdax seaborn pymongo matplotlib
+RUN pip3 install datetime gdax seaborn pymongo matplotlib
 
 COPY requirements.txt ./
 
