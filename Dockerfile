@@ -3,7 +3,7 @@ FROM amancevice/pandas:0.22.0-python3-alpine
 RUN apk update && apk upgrade && \
     apk add --no-cache git
 
-RUN apk add --update curl gcc g++
+RUN apk add --update curl gcc g++ libpng freetype-dev
 
 RUN mkdir /hw2
 
