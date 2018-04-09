@@ -25,7 +25,7 @@ RUN mkdir /hw2
 
 WORKDIR /hw2
 
-RUN pip3 install datetime gdax seaborn pymongo matplotlib
+RUN pip install datetime gdax seaborn pymongo matplotlib
 
 COPY requirements.txt ./
 
