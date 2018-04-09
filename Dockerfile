@@ -24,7 +24,7 @@ ENTRYPOINT ["/usr/bin/mongod"]
 # --------------------------------------------------------
 # Section above was borrowed. Section below is mine own.
 # --------------------------------------------------------
-
+RUN apt-get update && apt-get install -y git
 RUN mkdir /hw2
 
 WORKDIR /hw2
