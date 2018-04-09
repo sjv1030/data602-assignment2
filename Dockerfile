@@ -5,7 +5,7 @@ RUN apk update && apk upgrade && \
 
 RUN apk add --update curl gcc g++
 
-RUN apk add json
+RUN apk add json-py
 
 RUN mkdir /hw2
 
