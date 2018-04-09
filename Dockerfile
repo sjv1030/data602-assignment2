@@ -5,16 +5,16 @@ RUN apk update && apk upgrade && \
 
 RUN apk add --update curl gcc g++
 
-RUN apk add py-lxml 
+RUN apk add json
 
 RUN mkdir /hw2
 
 WORKDIR /hw2
 
-RUN pip3 install datetime json gdax seaborn pymongo matplotlib
+RUN pip3 install datetime gdax seaborn pymongo matplotlib
 
 COPY requirements.txt ./
 
 RUN git clone https://github.com/sjv1030/data602-assignment2 ../hw2/data602-assignment2
 
-CMD [ "python3
+CMD [ "python3", "/hw2/data602-assignment2/final.py" ]
