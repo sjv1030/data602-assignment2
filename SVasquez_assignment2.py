@@ -13,6 +13,7 @@ import time
 import gdax
 import seaborn as sns
 import matplotlib.pyplot as plt
+import matplotlib
 
 from urllib.request import urlopen
 from pymongo import MongoClient
