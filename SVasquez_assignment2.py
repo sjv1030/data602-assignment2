@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 from urllib.request import urlopen
 from pymongo import MongoClient
 
-plt.switch_backend('Qt4Agg')  
+plt.switch_backend('TKAgg')  
 #%%
 # Create a class named Portfolio to keep track of each portfolio created
 class Portfolio(object):
