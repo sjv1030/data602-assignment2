@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 from urllib.request import urlopen
 from pymongo import MongoClient
 
-  
+matplotlib.use('Agg')  
 #%%
 # Create a class named Portfolio to keep track of each portfolio created
 class Portfolio(object):
