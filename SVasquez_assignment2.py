@@ -13,12 +13,11 @@ import time
 import gdax
 import seaborn as sns
 import matplotlib.pyplot as plt
-import matplotlib
 
 from urllib.request import urlopen
 from pymongo import MongoClient
 
-matplotlib.use('Agg')  
+plt.switch_backend('agg')  
 #%%
 # Create a class named Portfolio to keep track of each portfolio created
 class Portfolio(object):
