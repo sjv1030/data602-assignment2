@@ -123,7 +123,7 @@ class Portfolio(object):
         
         # persist blotter in MongoDB if flag == 1
         if flag == 1:
-            client = MongoClient('mongodb://0.0.0.0:27017')
+            client = MongoClient('mongodb://192.168.99.100:27017')
             db = client.blotter
             collect = db.blotter
             collect.insert_one({'Time':time,'Trade':trade, 
@@ -321,7 +321,7 @@ gdax_client = gdax.PublicClient()
 pd.options.display.float_format = '{:,.2f}'.format
 
 # Get historical data for various coins to create database
-client = MongoClient('mongodb://0.0.0.0:27017')
+client = MongoClient('mongodb://192.168.99.100:27017')
 client.drop_database('crypto_hist')
 
 
