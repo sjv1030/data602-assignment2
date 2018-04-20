@@ -4,3 +4,4 @@ Matplotlib
 gdax
 seaborn
 pymongo
+Flask
