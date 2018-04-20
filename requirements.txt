@@ -1,9 +1,0 @@
-Numpy
-Pandas
-urllib
-Matplotlib
-json
-gdax
-seaborn
-pymongo
-time
