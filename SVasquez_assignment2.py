@@ -324,7 +324,7 @@ class Portfolio(object):
 
 #%%
 if __name__ == "__main__":
-	app.run()
+	app.run(host='0.0.0.0', debug=True)
 	
 gdax_client = gdax.PublicClient()
   
